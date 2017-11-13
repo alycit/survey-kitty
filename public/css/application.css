@@ -36,3 +36,22 @@ nav li {
   text-decoration:underline;
   cursor:pointer;
 }
+
+.hidden {
+  display: none;
+}
+
+.fields, .buttons {
+  margin: 10px;
+}
+.fields > div, .buttons > div {
+  margin: 5px;
+}
+
+.fields > div.question {
+  margin-left: 30px;
+}
+
+.fields > div.choice {
+  margin-left: 60px;
+}

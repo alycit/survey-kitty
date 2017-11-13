@@ -1,0 +1,19 @@
+<h2>Create Survey</h2>
+
+<form id="createSurvey" method="post" action="/surveys">
+  <div class="fields">
+    <div>
+      <label for="survey[name]">Name: </label><input name="survey[name]">
+    </div>
+  </div>
+  <div class="buttons">
+    <div>
+      <button id="addQuestion" type="button">Add Question</button>
+      <button id="addChoice" type="button" class="hidden">Add Choice</button>
+      <button id="completeQuestion" type="button" class="hidden">Complete Question</button>
+      <button id="completeSurvey" type="submit" class="hidden">Submit Survey</button>
+    </div>
+  </div>
+</form>
+
+<script src="/js/createSurvey.js"></script>

@@ -1,4 +1,5 @@
 post '/surveys/:id/choices' do
+  authenticate!
   choices = params[:choices]
 
   choices.each do |question_id, answer_id|

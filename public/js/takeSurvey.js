@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $("#survey").on("submit", function(event){
     event.preventDefault();
 
@@ -20,7 +21,6 @@ $(document).ready(function() {
         createChart(stats[i], i);
       }
     });
-
   });
 });
 
@@ -57,11 +57,15 @@ function createChart(questionStats, number) {
   });
 }
 
+function getRandomColor() {
+  return '#'+Math.floor(Math.random()*16777215).toString(16);
+}
+
 function getColors(number) {
   var colors = [];
 
   for(var i = 0; i < number; i++) {
-    colors.push('#'+Math.floor(Math.random()*16777215).toString(16))
+    colors.push(getRandomColor());
   }
 
   return colors;
