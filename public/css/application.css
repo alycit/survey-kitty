@@ -49,6 +49,7 @@ nav li {
 }
 
 .fields > div.question {
+  margin-top: 20px;
   margin-left: 30px;
 }
 
